@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+header {
+    padding: 1.5rem 5%;
+    background-color: #ffffff;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+header nav a:first-of-type {
+    margin-right: auto;
+}
+
+header img {
+    width: 95px;
+    height: auto;
+    display: block;
+}
+
+header nav a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+header nav a:hover {
+    opacity: 0.5;
+}
+
+header nav a:focus {
+    outline: 2px solid #111111;
+    outline-offset: 5px;
+}
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    min-height: 80vh;
+    background-color: #ffffff;
+}
+
+.about-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7rem 5%;
+}
+
+.section-label {
+    margin-bottom: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.about-hero h1 {
+    max-width: 850px;
+    font-size: clamp(4rem, 8vw, 8rem);
+    font-weight: 800;
+    line-height: 0.85;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+}
+
+.about-hero-image {
+    min-height: 80vh;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.about-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.our-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    padding: 10rem 5%;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.story-heading h2 {
+    max-width: 650px;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 800;
+    line-height: 0.88;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+}
+
+.story-content {
+    max-width: 600px;
+    align-self: end;
+}
+
+.story-content p {
+    margin-bottom: 2rem;
+    color: #b5b5b5;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.story-content p:last-child {
+    margin-bottom: 0;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+}
+
+.mission,
+.vision {
+    padding: 9rem 5%;
+}
+
+.mission {
+    border-right: 1px solid #d0d0d0;
+}
+
+.mission h2,
+.vision h2 {
+    margin-bottom: 3rem;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 0.88;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+}
+
+.mission p:last-child,
+.vision p:last-child {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.why-left {
+    padding: 10rem 5%;
+    background-color: #ffffff;
+}
+
+.why-heading {
+    margin-bottom: 7rem;
+}
+
+.why-heading h2 {
+    max-width: 900px;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    font-weight: 800;
+    line-height: 0.88;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.about-features article {
+    padding-top: 1.5rem;
+    border-top: 2px solid #111111;
+}
+
+.about-features span {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.about-features h3 {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.about-features p {
+    max-width: 320px;
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+footer {
+    padding: 5rem 5% 2rem;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+footer nav a:hover {
+    opacity: 0.5;
+}
+
+footer nav a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 5px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: #777777;
+}
+
+
+
+/* Responsive design fot tablet widths */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 1.5rem 4%;
+    }
+
+    header nav {
+        gap: 1.5rem;
+    }
+
+    header img {
+        width: 85px;
+    }
+
+    header nav a {
+        font-size: 0.7rem;
+    }
+
+    .about-hero {
+        grid-template-columns: 1fr 1fr;
+        min-height: 70vh;
+    }
+
+    .about-hero-text {
+        padding: 5rem 5%;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(3.5rem, 8vw, 6rem);
+    }
+
+    .about-hero-image {
+        min-height: 70vh;
+    }
+
+    .our-story {
+        gap: 3rem;
+        padding: 7rem 5%;
+    }
+
+    .story-heading h2 {
+        font-size: clamp(3rem, 6vw, 5rem);
+    }
+
+    .story-content p {
+        font-size: 0.9rem;
+    }
+
+    .mission,
+    .vision {
+        padding: 7rem 5%;
+    }
+
+    .mission h2,
+    .vision h2 {
+        font-size: clamp(2.8rem, 5vw, 4.5rem);
+    }
+
+    .why-left {
+        padding: 7rem 5%;
+    }
+
+    .why-heading {
+        margin-bottom: 5rem;
+    }
+
+    .why-heading h2 {
+        font-size: clamp(3rem, 7vw, 5.5rem);
+    }
+
+    .about-features {
+        gap: 2.5rem;
+    }
+
+    .about-features p {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 5rem 5% 2rem;
+    }
+
+    footer nav {
+        gap: 2rem;
+    }
+
+}
+
+
+/* Responsive design for mobile widths */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 1.25rem 5%;
+    }
+
+    header nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: stretch;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    header nav a:first-of-type {
+        grid-column: 1 / 5;
+        justify-self: start;
+        margin-right: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header nav a {
+        font-size: 0.6rem;
+        letter-spacing: 0.07em;
+    }
+
+    .about-hero {
+        display: block;
+        min-height: 0;
+    }
+
+    .about-hero-text {
+        padding: 5rem 5%;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+    .about-hero-image {
+        min-height: 400px;
+        height: 55vh;
+    }
+
+    .our-story {
+        display: block;
+        padding: 5rem 5%;
+    }
+
+    .story-heading {
+        margin-bottom: 3rem;
+    }
+
+    .story-heading h2 {
+        font-size: clamp(2.8rem, 12vw, 4.2rem);
+    }
+
+    .story-content p {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .mission-vision {
+        display: block;
+    }
+
+    .mission,
+    .vision {
+        padding: 5rem 5%;
+    }
+
+    .mission {
+        border-right: none;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+    .mission h2,
+    .vision h2 {
+        margin-bottom: 2rem;
+        font-size: clamp(2.8rem, 12vw, 4.2rem);
+    }
+
+    .mission p:last-child,
+    .vision p:last-child {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .why-left {
+        padding: 5rem 5%;
+    }
+
+    .why-heading {
+        margin-bottom: 4rem;
+    }
+
+    .why-heading h2 {
+        font-size: clamp(2.8rem, 12vw, 4.2rem);
+    }
+
+    .about-features {
+        display: block;
+    }
+
+    .about-features article {
+        margin-bottom: 3rem;
+    }
+
+    .about-features article:last-child {
+        margin-bottom: 0;
+    }
+
+    .about-features span {
+        margin-bottom: 1.5rem;
+    }
+
+    .about-features p {
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-hero,
+    .our-story,
+    .mission-vision,
+    .why-left,
+    footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-hero h1,
+    .story-heading h2,
+    .mission h2,
+    .vision h2,
+    .why-heading h2 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    footer {
+        padding: 4rem 5% 2rem;
+    }
+
+    footer nav {
+        gap: 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    footer nav a {
+        font-size: 0.65rem;
+    }
+
+    .copyright {
+        font-size: 0.6rem;
+    }
+
+}
